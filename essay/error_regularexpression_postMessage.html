@@ -10,15 +10,19 @@
 <button onclick="myFunction()">µ„Œ“</button>
 <p id="demo"></p>
 <p id="demo1"></p>
+<p id="demo2"></p>
 <script>
 function myFunction() {
     var str1 = "testjumptime.com";
 	var str2 = "www.eviljumptime.com";
+	var str3 = "www.eviljumptime.com:80"
 	var w=/jumptime.com(:[0-9] )?$/;
     var n = str1.match(w);
 	var n1 = str2.match(w);
+	var n2 = str3.match(w);
     document.getElementById("demo").innerHTML = "match:"+str1+" result:"+n;
 	document.getElementById("demo1").innerHTML = "match:"+str2+" result:"+n1;
+	document.getElementById("demo2").innerHTML = "match:"+str3+" result:"+n2;
 }
 </script>
 
