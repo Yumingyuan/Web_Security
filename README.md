@@ -28,5 +28,5 @@ web 安全课程撰写代码共享
 * [javascript](http://www.javascript.com) 
 * [w3school](http://www.w3school.com.cn/)
 * [菜鸟教程](http://www.runoob.com/)
-* [毛剑老师](http://cst.buaa.edu.cn/info/1072/1088.htm)
+* [Jackie Mao](http://cst.buaa.edu.cn/info/1072/1088.htm)
 
