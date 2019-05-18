@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Yumingyuan origin Check</title>
+</head>
+<body>
+
+<p>正则匹配 "jumptime.com", 并显示匹配的起始位置：对应论文中Table2</p>
+<button onclick="myFunction()">点我</button>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+function myFunction() {
+	//匹配1
+	var str1="evil.chartbeat-com"
+	var w1=/[\/|\.]chartbeat.com$/;
+	var n1 = str1.match(w1);
+	//匹配2
+	var str2="sharethis.com.malious.com";
+	var w2="sharethis.com"
+	var n2=(str2.indexOf(w2)!=-1);
+	//匹配3
+	var str3="www.kissmetrics.com.evil.com";
+	var w3=/\.kissmetrics\.com/;
+	var n3= str3.match(w3);
+	//匹配4
+	var str4="eviljumptime.com:8";
+	var w4=/jumptime\.com(:[0-9])?$/
+	var n4=str4.match(w4);
+	//var str2 = "www.eviljumptime.com";
+	//var str3 = "www.eviljumptime.com:0"
+	//var str4 = "www.eviljumptime.com:0 "
+	//var n1 = str2.match(w);
+	//var n2 = str3.match(w);
+	//var n3 = str4.match(w);
+    document.getElementById("demo").innerHTML = "match:"+str1+" with "+"\""+w1+"\""+" result:"+n1;
+	document.getElementById("demo1").innerHTML = "match:"+str2+" with function indexOf()"+" result:"+n2;
+	document.getElementById("demo2").innerHTML = "match:"+str3+" with "+"\""+w3+"\""+" result:"+n3;
+	document.getElementById("demo3").innerHTML = "match:"+str4+" with "+"\""+w4+"\""+" result:"+n4;
+}
+</script>
