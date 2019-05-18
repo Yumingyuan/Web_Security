@@ -8,6 +8,8 @@ web 安全课程撰写代码共享
     *  XSS
     *  XSS worm(link based,DOM-based)
 * 部分论文所提到代码复现(会附带论文标题或链接)
+   * ./essay/Origin_Check.html:The Postman Always Rings Twice Table2
+   * ./essay/Origin_Check.html:The Postman Always Rings Twice Figure7
 * wsb environment payload and source code
 
 ## 有问题反馈
