@@ -13,6 +13,7 @@
 <p id="demo2"></p>
 <p id="demo3"></p>
 <p id="demo4"></p>
+<p id="demo5"></p>
 <script>
 function myFunction() {
 	//∆•≈‰1
@@ -39,6 +40,10 @@ function myFunction() {
 	var n5=str5.match(w5);
 	var n5_1=str5_1.match(w5);
 	var n5_2=str5_2.match(w5);
+	//∆•≈‰6
+	var str6="https://www.dastelefonbuch.de.evil.com";
+	var w6=/http(s)?\:\/\/\w+?\.?dastelefonbuch.de/;
+	var n6=str6.match(w6);
     document.getElementById("demo").innerHTML = "match:"+str1+" with "+"\""+w1+"\""+" result:"+n1;
 	document.getElementById("demo1").innerHTML = "match:"+str2+" with function indexOf()"+" result:"+n2;
 	document.getElementById("demo2").innerHTML = "match:"+str3+" with "+"\""+w3+"\""+" result:"+n3;
@@ -46,5 +51,6 @@ function myFunction() {
 	document.getElementById("demo4").innerHTML = "match:"+str5+" with "+"\""+w5+"\""+" result:"+n5+
 	"<br/>match:"+str5_1+" with "+"\""+w5+"\""+" result:"+n5_1+
 	"<br/>match:"+str5_2+" with "+"\""+w5+"\""+" result:"+n5_2;
+	document.getElementById("demo5").innerHTML = "match:"+str6+" with "+"\""+w6+"\""+" result:"+n6;
 }
 </script>
