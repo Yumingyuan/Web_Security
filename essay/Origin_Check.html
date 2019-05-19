@@ -15,6 +15,7 @@
 <p id="demo4"></p>
 <p id="demo5"></p>
 <p id="demo6"></p>
+<p id="demo7"></p>
 <script>
 function myFunction() {
 	//匹配1
@@ -41,18 +42,23 @@ function myFunction() {
 	var n5=str5.match(w5);
 	var n5_1=str5_1.match(w5);
 	var n5_2=str5_2.match(w5);
-	//匹配6：验证了Table2中例子有问题
-	var str6="https://www.dastelefonbuch.de.evil.com";
-	var str6_1="http://w.dastelefonbuch.de.evil.com";
-	var str6_2="w.dastelefonbuch.de.evil.com"
-	var w6=/http(s)?\:\/\/\w+?\.?dastelefonbuch.de/;//(s)?代表可以匹配http或者https
-	var n6=str6.match(w6);
-	var n6_1=str6_1.match(w6);
-	var n6_2=str6_2.match(w6);
-	//匹配7
-	var str7="http://evil.api.weibo.com";
-	var w7=/\api.weibo\.com$/;
+	//匹配6与匹配2一致，此处省略
+	//匹配7：验证了Table2中例子有问题
+	var str7="https://www.dastelefonbuch.de.evil.com";
+	var str7_1="http://w.dastelefonbuch.de.evil.com";
+	var str7_2="w.dastelefonbuch.de.evil.com"
+	var w7=/http(s)?\:\/\/\w+?\.?dastelefonbuch.de/;//(s)?代表可以匹配http或者https
 	var n7=str7.match(w7);
+	var n7_1=str7_1.match(w7);
+	var n7_2=str7_2.match(w7);
+	//匹配8
+	var str8="http://evil.api.weibo.com";
+	var w8=/\api.weibo\.com$/;
+	var n8=str8.match(w8);
+	//匹配9
+	var str9="www.evil-iD.rambler.ru";
+	var w9=/id.rambler.ru$/i;
+	var n9=str9.match(w9);
     document.getElementById("demo").innerHTML = "match: "+str1+" with "+"\""+w1+"\""+" result:"+n1;
 	document.getElementById("demo1").innerHTML = "match: "+str2+" with function indexOf()"+" result:"+n2;
 	document.getElementById("demo2").innerHTML = "match: "+str3+" with "+"\""+w3+"\""+" result:"+n3;
@@ -60,9 +66,10 @@ function myFunction() {
 	document.getElementById("demo4").innerHTML = "match: "+str5+" with "+"\""+w5+"\""+" result:"+n5+
 	"<br/>match: "+str5_1+" with "+"\""+w5+"\""+" result:"+n5_1+
 	"<br/>match: "+str5_2+" with "+"\""+w5+"\""+" result:"+n5_2;
-	document.getElementById("demo5").innerHTML = "match:"+str6+" with "+"\""+w6+"\""+" result:"+n6+
-	"<br/>match: "+str6_1+" with "+"\""+w6+"\""+" result:"+n6_1+
-	"<br/>match error!: "+str6_2+" with "+"\""+w6+"\""+" result:"+n6_2;
-	document.getElementById("demo6").innerHTML = "match: "+str7+" with "+"\""+w7+"\""+" result:"+n7;
+	document.getElementById("demo5").innerHTML = "match:"+str7+" with "+"\""+w7+"\""+" result:"+n7+
+	"<br/>match: "+str7_1+" with "+"\""+w7+"\""+" result:"+n7_1+
+	"<br/>match error!: "+str7_2+" with "+"\""+w7+"\""+" result:"+n7_2;
+	document.getElementById("demo6").innerHTML = "match: "+str8+" with "+"\""+w8+"\""+" result:"+n8;
+	document.getElementById("demo7").innerHTML = "match: "+str9+" with "+"\""+w9+"\""+" result:"+n9;
 }
 </script>
