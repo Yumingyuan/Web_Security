@@ -12,6 +12,7 @@
 <p id="demo1"></p>
 <p id="demo2"></p>
 <p id="demo3"></p>
+<p id="demo4"></p>
 <script>
 function myFunction() {
 	//匹配1
@@ -30,15 +31,20 @@ function myFunction() {
 	var str4="eviljumptime.com:8";
 	var w4=/jumptime\.com(:[0-9])?$/
 	var n4=str4.match(w4);
-	//var str2 = "www.eviljumptime.com";
-	//var str3 = "www.eviljumptime.com:0"
-	//var str4 = "www.eviljumptime.com:0 "
-	//var n1 = str2.match(w);
-	//var n2 = str3.match(w);
-	//var n3 = str4.match(w);
+	//匹配5
+	var str5="readspeaker.COM";//
+	var str5_1="readspeaker.comtest.evil.com"
+	var str5_2="readspeaker.com.evil.com"
+	var w5=/readspeaker.com/gi;//g代表全局匹配（直到匹配到最后一个结束匹配），i代表忽略大小写
+	var n5=str5.match(w5);
+	var n5_1=str5_1.match(w5);
+	var n5_2=str5_2.match(w5);
     document.getElementById("demo").innerHTML = "match:"+str1+" with "+"\""+w1+"\""+" result:"+n1;
 	document.getElementById("demo1").innerHTML = "match:"+str2+" with function indexOf()"+" result:"+n2;
 	document.getElementById("demo2").innerHTML = "match:"+str3+" with "+"\""+w3+"\""+" result:"+n3;
 	document.getElementById("demo3").innerHTML = "match:"+str4+" with "+"\""+w4+"\""+" result:"+n4;
+	document.getElementById("demo4").innerHTML = "match:"+str5+" with "+"\""+w5+"\""+" result:"+n5+
+	"<br/>match:"+str5_1+" with "+"\""+w5+"\""+" result:"+n5_1+
+	"<br/>match:"+str5_2+" with "+"\""+w5+"\""+" result:"+n5_2;
 }
 </script>
