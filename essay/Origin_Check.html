@@ -42,8 +42,10 @@ function myFunction() {
 	var n5_2=str5_2.match(w5);
 	//匹配6
 	var str6="https://www.dastelefonbuch.de.evil.com";
-	var w6=/http(s)?\:\/\/\w+?\.?dastelefonbuch.de/;
+	var str6_1="w.dastelefonbuch.de.evil.com"
+	var w6=/http(s)?\:\/\/\w+?\.?dastelefonbuch.de/;//(s)?代表可以匹配http或者https
 	var n6=str6.match(w6);
+	var n6_1=str6_1.match(w6);
     document.getElementById("demo").innerHTML = "match:"+str1+" with "+"\""+w1+"\""+" result:"+n1;
 	document.getElementById("demo1").innerHTML = "match:"+str2+" with function indexOf()"+" result:"+n2;
 	document.getElementById("demo2").innerHTML = "match:"+str3+" with "+"\""+w3+"\""+" result:"+n3;
@@ -51,6 +53,7 @@ function myFunction() {
 	document.getElementById("demo4").innerHTML = "match:"+str5+" with "+"\""+w5+"\""+" result:"+n5+
 	"<br/>match:"+str5_1+" with "+"\""+w5+"\""+" result:"+n5_1+
 	"<br/>match:"+str5_2+" with "+"\""+w5+"\""+" result:"+n5_2;
-	document.getElementById("demo5").innerHTML = "match:"+str6+" with "+"\""+w6+"\""+" result:"+n6;
+	document.getElementById("demo5").innerHTML = "match:"+str6+" with "+"\""+w6+"\""+" result:"+n6+
+	"<br/>match:"+str6_1+" with "+"\""+w6+"\""+" result:"+n6_1;
 }
 </script>
