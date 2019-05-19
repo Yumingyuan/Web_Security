@@ -63,7 +63,7 @@ function myFunction() {
 	//匹配10与匹配6和匹配2一致，此处省略
 	//匹配11
 	var str11="https://abcd.selector.js";
-	var w11=/^(https?://[^/]+)\.+(pss|selector|payment.total|matpay-remote).js/i;
+	var w11=/^(https?:\/\/[^/]+)\.+(pss|selector|payment.total|matpay-remote).js/i;
 	var n11=str11.match(w11);
     document.getElementById("demo").innerHTML = "match: "+str1+" with "+"\""+w1+"\""+" result:"+n1;
 	document.getElementById("demo1").innerHTML = "match: "+str2+" with function indexOf()"+" result:"+n2;
