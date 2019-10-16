@@ -10,6 +10,7 @@ web 安全课程撰写代码共享
 * 部分论文所提到代码复现(会附带论文标题或链接)
    * ./essay/Origin_Check.html:The Postman Always Rings Twice Table2
    * ./essay/Origin_Check.html:The Postman Always Rings Twice Figure7
+   * ./essay/mXSS_attack.html:mXSS attack
 * wsb environment payload and source code
 
 ## 有问题反馈
@@ -30,5 +31,5 @@ web 安全课程撰写代码共享
 * [javascript](http://www.javascript.com) 
 * [w3school](http://www.w3school.com.cn/)
 * [菜鸟教程](http://www.runoob.com/)
-* [Jackie Mao](http://cst.buaa.edu.cn/info/1072/1088.htm)
+* [Jackie Mao](http://cst.buaa.edu.cn/info/1207/2666.htm)
 
